@@ -1,7 +1,7 @@
 # Hierarchical Associative Memory, Parallelized MLP-Mixer, and Symmetry Breaking
 
 Ryo Karakida, Toshihiro Ota, and Masato Taki<br>
-https://arxiv.org/abs/2406.xxxxx
+https://arxiv.org/abs/2406.12220
 
 ## Abstract
 
@@ -15,13 +15,13 @@ The update rule of a three-layer hierarchical Hopfield network (Left) is identif
   <img src="./assets/architecture.jpg" width='70%'>
 </p>
 
-Our single update rule contains all the components of the mixing layer: token- and channel-mixing modules, layer normalization, and skip-connection, unlike previous studies. A model consisting of stacked associative memory models as mixing layers becomes an MLP-Mixer model composed of parallelized token- and channel-mixing modules. For the derivation and more architecture details, see Sec. 5 of [the paper]().
+Our single update rule contains all the components of the mixing layer: token- and channel-mixing modules, layer normalization, and skip-connection, unlike previous studies. A model consisting of stacked associative memory models as mixing layers becomes an MLP-Mixer model composed of parallelized token- and channel-mixing modules. For the derivation and more architecture details, see Sec. 5 of [the paper](https://arxiv.org/abs/2406.12220).
 
 ## Usage
 
 ### Requirements
 
-We use PyTorch Image Models `timm=0.9.2`. Other dependencies can be installed with the following:
+We use PyTorch Image Models `timm==0.9.2`. Other dependencies can be installed with the following:
 
 ```bash
 pip install -r requirements.txt
@@ -60,17 +60,17 @@ To train a model, e.g. ParaMixer, on CIFAR-10 from scratch, run the following:
 
 ### Demo
 
-The numerical demonstrations for Energy MetaFormer (Sec. 4.2) and AsymMixer (Sec. 6.2) are provided in the [demo](./demo) directory
+The numerical demonstrations for Energy MetaFormer (Sec. 4.2) and AsymMixer (Sec. 6.2) are provided in the [demo](./demo) directory.
 
 ## Citation
 
-If you use our code, or otherwise found our work useful, please cite the accompanying paper:
+If you use our code, or otherwise find our work useful, please cite the accompanying paper:
 
 ```bibtex
 @article{ota2024paramixer,
   title   = {Hierarchical Associative Memory, Parallelized MLP-Mixer, and Symmetry Breaking},
   author  = {Karakida, Ryo and Ota, Toshihiro and Taki, Masato},
-  journal = {arXiv preprint arXiv:2406.xxxxx},
+  journal = {arXiv preprint arXiv:2406.12220},
   year    = {2024}
 }
 ```
